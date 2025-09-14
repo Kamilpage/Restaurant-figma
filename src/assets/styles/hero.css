@@ -1,0 +1,43 @@
+.background-img {
+        background-image: url("../background.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding-bottom:100px ;
+}
+
+.welcome-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 231px;
+    padding-top: 322px;
+    margin-top: -119px;
+}
+
+.welcome-text__inner h3 {
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.welcome-text__inner h2 {
+    font-weight: 400;
+    font-size: 80px;
+}
+
+.welcome-text__inner p {
+    color: #ffffff;
+}
+
+.welcome-text__inner hr {
+    background-color: #C4C4C4;
+    height: 2px;
+    width: 61px;
+
+}
+
+.welcome-text__action {
+
+}
