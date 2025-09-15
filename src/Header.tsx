@@ -1,11 +1,12 @@
 import cart from "./assets/cart.svg";
-import './assets/styles/main.css'
+import './styles/main.css'
 import logo from './assets/logo.svg'
 
 function Header() {
     return (
+        <section className='header'>
         <div className='container'>
-            <div className='header'>
+            <div className='header__inner'>
                 <div className="nav-left">
                     <img src={logo} alt="#"/>
                 </div>
@@ -31,6 +32,7 @@ function Header() {
 
             </div>
         </div>
+        </section>
     );
 };
 

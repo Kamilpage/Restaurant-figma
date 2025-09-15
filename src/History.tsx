@@ -2,7 +2,7 @@ import {useState} from "react";
 import history1 from './assets/history-1.png'
 import history2 from './assets/history-2.png'
 import history3 from './assets/history-3.png'
-import './assets/styles/main.css'
+import './styles/main.css'
 
 const History = () => {
     const [statistics] = useState([{amount: 93, name: 'Напитки'}, {
@@ -10,10 +10,10 @@ const History = () => {
         name: 'Еда'
     }, {amount: 71, name: 'Закуски'}])
     return (
-        <div className='history_content container d-flex'>
+        <section className='history_content container d-flex'>
             <div className='history-left'>
                 <h2>Наша <span className='dark-orange-text'> История</span></h2>
-                <p className='grey-p'>Как и у любого другого самобытного места, у нас есть своя, особая история. Идея
+                <p>Как и у любого другого самобытного места, у нас есть своя, особая история. Идея
                     ресторана пришла
                     основателям неожиданно. Во время прогулки по лесу создатель нашего ресторана застрял в сотнях
                     километров от ближайшего населенного пункта. Вдали от цивилизации и связи им пришлось навремя
@@ -32,7 +32,7 @@ const History = () => {
                     <img src={history3} alt="#"/>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
