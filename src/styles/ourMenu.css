@@ -39,11 +39,14 @@
     position: relative;
 }
 
-.isRecommended p {
+.isRecommended{
     position: absolute;
-    transform: translateX(-100%);
     top: 0;
-    left: 148px;
+    left: 0;
+}
+
+.isRecommended p {
+
     background-color: #D67E34;
     color: black;
     padding: 12px;
@@ -53,16 +56,18 @@
     display: none;
 }
 
+.burger-item{
+
+}
+
 .burger-item img {
     border-radius: 50%;
 
 }
 
+
 .burger-item h3 {
-    position: absolute;
     color: #ffffff;
-    transform: translateY(-100%);
-    right: -26px;
     font-weight: 400;
     font-size: 30px;
     font-family: Cookies, serif;
@@ -86,5 +91,9 @@
 }
 
 .price-tag {
-    position: relative;
+    position: absolute;
+    transform: translateY(-100%);
+    right: -26px;
+
+
 }

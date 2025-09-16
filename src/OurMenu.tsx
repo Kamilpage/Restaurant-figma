@@ -7,10 +7,10 @@ const OurMenu = () => {
         recommended: true, icon: burgerIcon, price: 420, title: 'Гамбургер макси', body: 'Максимально толстый \n' +
             'слой мяса'
     }, {
-        recommended: false, icon: burgerIcon, price: 420, title: 'Гамбургер макси', body: 'Максимально толстый \n' +
+        recommended: true, icon: burgerIcon, price: 420, title: 'Гамбургер макси', body: 'Максимально толстый \n' +
             'слой мяса'
     }, {
-        recommended: false, icon: burgerIcon, price: 420, title: 'Гамбургер макси', body: 'Максимально толстый \n' +
+        recommended: true, icon: burgerIcon, price: 420, title: 'Гамбургер макси', body: 'Максимально толстый \n' +
             'слой мяса'
     }]);
     return (
@@ -23,10 +23,10 @@ const OurMenu = () => {
                     {burgers.map((item, index) => (
                         <div className='burger-item' key={index}>
                         <div className={item.recommended ? 'isRecommended' : 'not-recommended'}><p>RECOMMENDED</p></div>
-                        <div className='price-tag'>
                         <img src={item.icon} alt=""/>
+                            <div className='price-tag'>
                         <h3>{item.price}</h3>
-                        </div>
+                            </div>
                         <h2>Гамбургер макси</h2>
                         <p>Максимально толстый
                             слой мяса</p>
