@@ -1,28 +1,25 @@
-import Header from "./Header.tsx";
-import Hero from "./Hero.tsx";
-import Carts from "./Carts.tsx";
-import History from "./History.tsx";
-import BussinesLunch from "./BussinesLunch.tsx";
-import Meals from "./Meals.tsx";
-import OurMenu from "./OurMenu.tsx";
-import ReviewPart from "./ReviewPart.tsx";
-import MenuGallery from "./MenuGallery.tsx";
+import {BrowserRouter, Route, Routes, Navigate} from "react-router-dom";
+import AboutPage from "./AboutPage.tsx";
+import Pages from "./Pages.tsx";
+import ErrorPage from "./ErrorPage.tsx";
+import Order from "./Order.tsx";
+import Catalog from "./Catalog.tsx";
 
 function App() {
-
     return (
-        <>
-            <Header/>
-            <Hero/>
-            <Carts/>
-            <History/>
-            <BussinesLunch/>
-            <Meals/>
-            <OurMenu/>
-            <ReviewPart/>
-            <MenuGallery/>
-        </>
-    )
+        <BrowserRouter>
+            <Routes>
+                <Route path="/AboutPage" element={<AboutPage />} />
+                <Route path="/Pages" element={<Pages />} />
+                <Route path="/Pages" element={<Pages />} />
+                <Route path="/Order" element={<Order />} />
+                <Route path="/ErrorPage" element={<ErrorPage />} />
+                <Route path="/Catalog" element={<Catalog />} />
+
+                <Route path="*" element={<Navigate to="/ErrorPage" replace />} />
+            </Routes>
+        </BrowserRouter>
+    );
 }
 
-export default App
+export default App;

@@ -1,0 +1,67 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(158, 156, 156, 0.7);
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 40px;
+}
+
+.orderCheck {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background-color: black;
+    gap: 20px;
+}
+
+.orderCheck input {
+    width: 300px;
+}
+
+.orderCheck h1 {
+    color: white;
+}
+
+.orderCheck input {
+    border: darkorange solid 1px;
+    padding: 4px;
+}
+
+
+.order__action {
+    display: flex;
+    gap: 10px;
+}
+
+.notif-modal{
+    position: relative;
+    padding-top: 40px;}
+
+.notif{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkorange;
+    color: black;
+}
+
+.order-component{
+    padding-top: 150px;
+    padding-bottom: 380px;
+ display: flex;
+    gap: 20px;
+}
+

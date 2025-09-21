@@ -9,4 +9,7 @@
 @import "ourMenu.css";
 @import "review.css";
 @import "menuGallery.css";
-
+@import "../Responsive/responsiveMain.css";
+@import "modal.css";
+@import "aboutPage.css";
+@import 'others.css';

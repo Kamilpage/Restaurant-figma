@@ -33,6 +33,11 @@
     cursor: pointer;
     height: 100%;
 
+
+}
+
+.btn:focus{
+    outline: none;
 }
 
 .btn:hover{
